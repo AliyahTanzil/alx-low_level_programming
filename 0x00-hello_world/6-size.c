@@ -1,10 +1,8 @@
 #include <stdio.h>
-/**
- * main- Entry point
- *
- * Return: Always 0 
+/*
+ * main-Entry piont
+ * Return 0 Alway (success)
  */
-
 int main(void)
 {
 	int a;
