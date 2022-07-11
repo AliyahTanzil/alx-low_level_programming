@@ -1,6 +1,5 @@
-#include "holberton.h"
 /**
- * _strcpy -a function that copies the string pointed by src,
+ * _strcpy - is a function that copies the string pointed by src,
  * including the terminating null byte (\0), to the buffer
  * pointed by dest.
  *
