@@ -11,7 +11,7 @@
 {
 	char low, e, q;
 
-	e = 'q';
+	e = 'e';
 	q = 'q';
 
 	for (low = 'a'; low <= 'z'; low++)
