@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - view the holberton code
+ * main - check the code
  *
  * Return: Always 0.
  */
