@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * lett - is a function that encodes a string into 1337.
- * @s: input string to code
+ * leet - is a function that encodes a string into 1337.
+ * @s: input string to encode
  * Return: encode string
  */
 char *leet(char *s)
