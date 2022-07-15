@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+
 /**
  * main - code checker for holberton students
  *
