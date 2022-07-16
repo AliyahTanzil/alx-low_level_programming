@@ -3,14 +3,15 @@
 #include <time.h>
 
 /**
- * main - entry point
+ *positive_or_negative - checks for positve, negative and zero numbers
  *
  * Return: Always 0 (success)
  */
 int positive_or_negative(void)
 {
 	int n;
-	srand(time(0));
+
+i	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
