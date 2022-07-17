@@ -8,17 +8,9 @@
 int main(void)
 {
 	int i;
-	
-	printf("Infinite loop comming :(\n");
 
-	i = 0;
-
-	while (i < 10)
-	{
-		putchar(i);
-	}
-
-	printf("Infinite loop avoided! \\o/\n");
+	i = 98;
+	positive_or_negative(i);
 
 	return (0);
 }
