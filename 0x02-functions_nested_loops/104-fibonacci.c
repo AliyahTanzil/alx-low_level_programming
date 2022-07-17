@@ -1,27 +1,37 @@
 #include <stdio.h>
-
+#define BIGEST 10000000000
 /**
- * main - Entring point
- * Descrition: Prints the first 98 Fibonacci numbers, starting
- * with 1 and 2, followed by a new line
+ * main - entring point
+ * Description: print the first 98 fibonacci numbers starting with 1 and 2
  * Return: Always 0
  */
 int main(void)
 {
-	int i = 0;
-	unsigned long int a = 0, b = 1, next = 0;
+	unsigned long int r = 0, k = 1, r1 = 0, k1 = 2;
+	unsigned long int h, h1, h2;
+	int c;
 
-	while (i < 98)
+	printf("%lu, %lu, ", k, k1);
+	for (c = 2; c < 98; c++)
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		printf("%lu", next);
-
-		if (i < 97)
+		if (k + k1 > BIGEST || r1 > 0 || r > 0)
+		{
+			h = (k + k1) / BIGEST;
+			h1 = (k + k1) % BIGEST;
+			h2 = r + r1 + h;
+			r = r1, r1 = h2;
+			k = k1, k1 = h1;
+			printf("%lu%010lu", r1, k1);
+		}
+		else
+		{
+			h1 = k + k1;
+			k = k1, k1 = h1;
+			printf("%lu", k1);
+		}
+		if (c != 97)
 			printf(", ");
-		i++;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
