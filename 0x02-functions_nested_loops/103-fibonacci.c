@@ -9,16 +9,19 @@
  */
 int main(void)
 {
-	int a = 0, b = 1, next = 0;
-	int sum = 0;
+	int i;
+	long int fibonacci[50], sum = 2;
 
-	while (next < 4000000)
+	fibonacci[0] = 1;
+	fibonacci[1] = 2;
+
+	for (i = 2; i < 50; i++)
 	{
-		next = a + b;
-		b = next;
-		if (next % 2 == 0)
-			sum += next;
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+		if ((fibonacci[i] % 2) == 0 && fibonacci[i] < 4000000)
+			sum += fibonacci[i];
 	}
-	printf("%i\n", sum);
+	printf("%ld\n", sum);
+
 	return (0);
 }
