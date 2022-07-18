@@ -5,7 +5,7 @@
  * @s: location to fill
  * @b: char to fill location with
  * @n: number of buyes to fill
- * @Return: returns pointer to location filled
+ * Return: returns pointer to location filled
  */
 char *_memset(char *s, char b, unsigned int n)
 {
