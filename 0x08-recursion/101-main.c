@@ -18,13 +18,15 @@ int main(void)
 	printf("%d\n", r);
 	r = wildcmp("main.c", "m*c");
 	printf("%d\n", r);
-	r = wildcmp("main.c", "ma*******************************c");
+	r = wildcmp("main.c", "ma*****************************c");
 	printf("%d\n", r);
 	r = wildcmp("main.c", "*");
 	printf("%d\n", r);
 	r = wildcmp("main.c", "***");
 	printf("%d\n", r);
 	r = wildcmp("main.c", "m.*c");
+	printf("%d\n", r);
+	r = wildcmp("main.c", "ma*in.c");
 	printf("%d\n", r);
 	r = wildcmp("main.c", "**.*c");
 	printf("%d\n", r);
