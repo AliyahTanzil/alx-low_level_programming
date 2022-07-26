@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - Returns a pointer
+ * _strdup - Returns a pointer
  * @str: The string to be copied
  * Retiurn: str == NULL or insufficient meemory
  */
@@ -22,7 +22,6 @@ char *_strdup(char *str)
 
 	for (index = 0; str[index]; index++)
 		duplicate[index] = str[index];
-	
 	duplicate[len] = '\0';
 	return (duplicate);
 }
