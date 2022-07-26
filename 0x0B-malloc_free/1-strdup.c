@@ -21,6 +21,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (index = 0; str[index]; index++)
+		duplicate[index] = str[index];
 		duplicate[index] = '\0';
 	return (duplicate);
 }
