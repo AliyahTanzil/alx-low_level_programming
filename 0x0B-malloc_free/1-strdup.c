@@ -4,7 +4,7 @@
 /**
  * *_strdup - Returns a pointer
  * @str: The string to be copied
- * Retiurn: str == NULL or insufficient meemory
+ * Return: str == NULL or insufficient meemory
  */
 char *_strdup(char *str)
 {
