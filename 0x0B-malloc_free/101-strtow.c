@@ -64,7 +64,7 @@ char **strtow(char *str)
 		return (NULL);
 
 	strings = malloc(sizeof(char *) * (words + 1));
-	if (strings == null)
+	if (strings == NULL)
 		return(NULL);
 
 	for (w = 0; w < words; w++)
@@ -72,7 +72,7 @@ char **strtow(char *str)
 		while (str[index] == ' ')
 			index++;
 		letters = word_len(str + index);
-		strings[w] = malo(sizeof(char ) * (letters + 1));
+		strings[w] = malloc(sizeof(char ) * (letters + 1));
 
 		if (strings[w] == NULL)
 		{
@@ -83,7 +83,7 @@ char **strtow(char *str)
 		}
 
 		for (l = 0; l < letters; l++)
-			stringd[w][l] = str[index++];
+			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 
 	}
