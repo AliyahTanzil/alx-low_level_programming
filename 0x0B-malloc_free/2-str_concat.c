@@ -6,11 +6,10 @@
  * @s1: The first string to be concatenated
  * @s2: second string to be concatenated
  * Return: when concatenation fails - NULL
- * 
  */
 char *str_concat(char *s1, char *s2)
 {
-	char * concat_str;
+	char  *concat_str;
 	int index, concat_index = 0, len = 0;
 
 	if (s1 == NULL)
