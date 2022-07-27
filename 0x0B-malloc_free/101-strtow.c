@@ -54,9 +54,9 @@ char **strtow(char *str)
 {
 	char **strings;
 	
-	int index = 0, words, w, characters, l;
+	int index = 0, words, w, l;
 	
-	if (str == NULL || str[0] == '\0'')
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
 	words = count_down(str);
