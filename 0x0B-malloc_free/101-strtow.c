@@ -77,7 +77,7 @@ char **strtow(char *str)
 		if (strings[w] == NULL)
 		{
 			for (; w >= 0; w--)
-i				free(strings[w]);
+				free(strings[w]);
 			free(strings);
 			return (NULL);
 		}
