@@ -54,7 +54,7 @@ char **strtow(char *str)
 {
 	char **strings;
 	
-	int index = 0, words, w, l;
+	int index = 0, words, w, characters, l;
 	
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
@@ -71,18 +71,18 @@ char **strtow(char *str)
 	{
 		while (str[index] == ' ')
 			index++;
-		letters = word_len(str + index);
-		strings[w] = malloc(sizeof(char ) * (letters + 1));
+		characters = word_len(str + index);
+		strings[w] = malloc(sizeof(char ) * (characters + 1));
 
 		if (strings[w] == NULL)
 		{
 			for (; w >= 0; w--)
-				free(strings[w]);
+i				free(strings[w]);
 			free(strings);
 			return (NULL);
 		}
 
-		for (l = 0; l < letters; l++)
+		for (l = 0; l < characters; l++)
 			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 
