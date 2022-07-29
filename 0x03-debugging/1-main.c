@@ -16,6 +16,7 @@ int main(void)
 	 * 
 	 * {
 	 * putchar(i);
+	 * the increament part is missing which leads to infinite loop
 	 * }
 	 */
 	printf("Infinite loop avoided! \\o/\n");
