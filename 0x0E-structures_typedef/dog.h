@@ -3,7 +3,8 @@
 
 /**
  * struct dog - structure for a basic dog
- * @name: Dog's name@age: Dog's age
+ * @name: Dog's name
+ * @age: Dog's age
  * @owner: Dog's ownerDescription: data structure for dog
  */
 struct dog
