@@ -2,9 +2,17 @@
 #include "dog.h"
 
 /**
+<<<<<<< HEAD
  * _copy  -   Make a copy of passed in argument
  * @src:      Data to make copy of
  * Return:    Pointer
+=======
+ * new_dog - creates a new dog structure
+ * @name: Dog's name
+ * @age: Dog's age
+ * @owner: Dog's owner
+ * Return: returns a pointer to newly created dog structure
+>>>>>>> 7441c08c9494d3968baaa6a58f94adaef6637600
  */
 
 char *_copy(char *src)
@@ -43,8 +51,14 @@ char *_copy(char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+<<<<<<< HEAD
 	dog_t *snoopie;
 	char *new_name, *new_owner;
+=======
+	dog_t *new_dog;
+	char *cpyname, *cpyowner;
+	int len_name = 0, len_owner = 0, i;
+>>>>>>> 7441c08c9494d3968baaa6a58f94adaef6637600
 
 	if (name == NULL || owner == NULL)
 	{
