@@ -1,21 +1,3 @@
-
-mecomonteshbtn
-/
-C-low_level_programming
-Public
-Code
-Issues
-Pull requests
-3
-Actions
-Projects
-More
-C-low_level_programming/0x13-more_singly_linked_lists/102-free_listint_safe.c
-@mecomonteshbtn
-mecomonteshbtn corrections on project 102
- History
- 1 contributor
-45 lines (40 sloc)  708 Bytes
 #include <stdio.h>
 #include "lists.h"
 #include <stdlib.h>
