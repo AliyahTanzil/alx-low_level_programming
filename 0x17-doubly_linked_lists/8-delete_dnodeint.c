@@ -1,41 +1,36 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * delete_dnodeint_at_index - delete node at specific index
- * @head: head of linked list
- * @index: index of node to delete
- * Return: 1 on success, -1 on failure
+ * delete_dnodeint_at_index - A function that inserts a node at position.
+ * @h: The double pointer to the head.
+ * @index: The index to insert new node at.
+ * Return: 1 on success, -1 on failure.
  */
-
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **h, unsigned int index)
 {
-	dlistint_t *current;
+	dlistint_t *temp = NULL;
+	unsigned int i = 0;
 
-	if (head == NULL)
-		return (-1);
-
-	current = *head;
-
-	if (current == NULL)
-		return (-1);
-
-	while (index != 0)
+	if (!h || !(*h))
 	{
-		current = current->next;
-		index--;
-		if (current == NULL)
-			return (-1);
+		return (-1);
 	}
-
-	if (current->prev != NULL)
-		current->prev->next = current->next;
 	else
 	{
-		*head = current->next;
-		if (current->next != NULL)
-			current->next->prev = NULL;
-		free(current);
+		temp = *h;
+		while (index != i++ && temp)
+			temp = temp->next;
+		if (!temp)
+			return (-1);
+		if (temp->next)
+			temp->next->prev = temp->prev;
+		if (index == 0)
+			*h = temp->next;
+		else
+			temp->prev->next = temp->next;
+		free(temp);
+		return (1);
 	}
-
-	return (1);
+	return (-1);
 }
