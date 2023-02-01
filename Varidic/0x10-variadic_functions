@@ -1,9 +1,18 @@
-#ifndef VARIADIC_FUNCTIONS_H
-#define VARIADIC_FUNCTIONS_H
+#include <stdio.h>
+#include "variadic_functions.h"
 
-int _putchar(char c);
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
-void print_strings(const char *separator, const unsigned int n, ...);
-void print_all(const char * const format, ...);
-#endif
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+  int sum;
+
+  sum = sum_them_all(2, 98, 1024);
+  printf("%d\n", sum);
+  sum = sum_them_all(4, 98, 1024, 402, -1024);
+  printf("%d\n", sum);    
+  return (0);
+}
